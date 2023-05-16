@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title></title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" rel="stylesheet">
+<style>
+      .logo-img {
+      max-width: 50px;
+      max-height: 50px; 
+      padding-left: 8px;     
+    }
+    
+    .profile-img {
+      width: 30px;
+      height: 30px;
+    }
+    .profile-img1 {
+      width: 20px;
+      height: 20px;
+    }
+    .custom-bg {
+      background-color: #6AC47E;
+    }
+    .checked {
+    color: orange;
+    }
+    .detailed-view-button {
+      padding-bottom: 4px;
+    }
+    .custom-color {
+      color: white;
+    }
+
+</style>
+</head>
+
+<body>
+  <header>
+    
+    <div class="container mt-4">
+        <h1 class="fw-bold"style="text-align: center;">Generating Minutes of Meeting</h1>
+  <div class="card">
+    <div class="card-body">
+      <div class="row ">
+        <div class="col-md-6 custom-bg rounded">
+          <h5 class="card-title custom-color">Daily Scrum Meeting   <img src="./zoom.png" alt="Zoom Logo" class="logo-img"></h5>
+          
+          <span class="card-text custom-color">Date:22/08/2020</span>
+          <p class="fw-normal custom-color" >Daily Stand up for Aled team working on PRD 1Project</p>
+          <hr color="black">
+          <div class="row">
+            <div class="col">
+                <p class="custom-color">owner</p>
+              <img src="https://cdn-icons-png.flaticon.com/512/6522/6522516.png" alt="Profile Picture" class="profile-img rounded-circle">
+            </div>
+            
+            <div class="col-4">
+                <p class="custom-color">Watcher</p>
+              <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Profile Picture" class="profile-img rounded-circle">
+              <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Profile Picture" class="profile-img rounded-circle">
+             
+            <span class="badge text-bg-secondary rounded-circle">+3</span>
+            
+            </div>
+
+            <div class="col-4">
+                <p class="custom-color">Participants</p>
+              <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Profile Picture" class="profile-img rounded-circle">
+              <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Profile Picture" class="profile-img rounded-circle">
+              <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Profile Picture" class="profile-img rounded-circle">
+              <span class="badge text-bg-secondary rounded-circle">+12</span>
+            </div>
+           
+          </div>
+          <hr color="black">
+          <span class="card-text custom-color mt-4">Meeting Hour</span>
+          <p class="card-text custom-color ">3 Hr 20 meeting</p>
+          
+          
+        </div>
+        <div class="col-md-6">
+            <div class="row">
+              <div class="col">
+                <h6 class="card-title">Agenda</h6>  
+              </div>
+              <div class="col">
+                <h6 class="card-title">Tasks</h6>  
+              </div>
+              <div class="col detailed-view-button">
+                <a href="#" class="btn btn-outline-dark float-right">Detailed view</a>
+              </div>
+              <hr color="grey" style="width: 500px;">
+            </div>
+            <span class="card-title">UX/UI Decision Making</span>
+            <p class="card-title">UX/UI Products Edit</p>
+            <strong class="card-title">Notes</strong>
+          <div >
+            <div class="fw-normal ml-2">Decision Point 1,Points-add action here</div>
+            <div class="ml-2">Insight,Points-add actions here</div>
+            <div class="ml-2">Discussion,Points-add actions here</div>
+           
+          </div>
+          
+            <div class="row"><strong class="col-3 card-title mt-1 ">Resources</strong><span class="col-4 form-text text-muted ">(Download links)</span></div>
+            
+            
+          
+          <div class="row mt-1">
+            <div class="col-4 mr-2">
+              <button class="btn btn-primary">Sales.pptx <i class="fa fa-download pl-2"></i></button>
+            </div>            
+            <div class="col-4 mr-2">
+              <button class="btn btn-primary">Sales.pptx <i class="fa fa-download pl-2"></i></button>
+            </div>
+            
+          </div>
+          
+          
+      </div>
+      <hr color="grey" style="width: 98%;" >
+      <div class="row">
+        <div class="col-2 mt-2">
+          <a href="#" class="btn btn-outline-dark"  >Create Follow up meeting</a>
+          
+        </div>
+        <div class="col-2 mt-2">
+            <a href="#" class="btn btn-outline-dark ">Follow Up meeting</a>
+        </div>
+        <div class="col-2 mt-4">
+           <input type="date" class="form-control" id="datepicker">
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row mt-4">
+    <div class="col-md-2">
+      <h6>Meeting Feedback</h6>
+      <span class="rating">
+        <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+      </span>
+    </div>
+    <div class="col-md-6">
+      <textarea class="form-control" rows="3" placeholder="Leave comment"></textarea>
+    </div>
+    <div class="col-md-4">
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="agree" >
+        <label class="form-check-label" for="agree">I agree to the meetings minutes</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+        <label class="form-check-label" for="flexCheckChecked">
+          I don't agree to the meetings minutes
+        </label>
+      </div>
+      <button type="button" class="btn btn-secondary">Close</button>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </div>
+  
+  </header>
+  <main>
+
+  </main>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
